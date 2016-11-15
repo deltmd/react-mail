@@ -1,6 +1,11 @@
 import React from "react";
 
 export default class Draft extends React.Component {
+	sendMessage( event ) {
+        event.preventDefault();
+
+        browserHistory.push( "/inbox" );
+    }
 	render() {
 		const styles = this.getStyles();
 
